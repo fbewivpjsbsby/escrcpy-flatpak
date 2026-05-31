@@ -3,7 +3,8 @@ name: release-docs
 on:
   push:
     branches:
-      - main
+      # - main
+      - build
 
 permissions:
   contents: write

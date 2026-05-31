@@ -3,7 +3,8 @@ name: release
 on:
   push:
     branches:
-      - main
+      # - main
+      - build
 
 permissions:
   contents: write

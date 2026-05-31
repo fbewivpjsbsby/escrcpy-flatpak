@@ -1,3 +1,7 @@
+This repo release flatpak build.
+
+Origin readme
+
 <div style="display:flex;">
   <img src="https://cdn.jsdelivr.net/gh/viarotel/resources@latest/logos/escrcpy.png" alt="viarotel-escrcpy" width="108px">
 </div>
