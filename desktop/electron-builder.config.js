@@ -28,9 +28,9 @@ export default {
   win: {
     icon: 'logo.ico',
     target: [
-      { target: 'nsis', arch: ['x64', 'arm64'] },
-      { target: 'zip', arch: ['x64', 'arm64'] },
-      { target: 'portable', arch: ['x64', 'arm64'] },
+      // { target: 'nsis', arch: ['x64', 'arm64'] },
+      // { target: 'zip', arch: ['x64', 'arm64'] },
+      // { target: 'portable', arch: ['x64', 'arm64'] },
       // { target: 'appx', arch: ['x64', 'arm64'] },
     ],
     artifactName: '${productName}-${version}-win-${arch}.${ext}',
@@ -66,8 +66,8 @@ export default {
   mac: {
     icon: 'logo.icns',
     target: [
-      { target: 'dmg', arch: ['x64', 'arm64'] },
-      { target: 'zip', arch: ['x64', 'arm64'] },
+      // { target: 'dmg', arch: ['x64', 'arm64'] },
+      // { target: 'zip', arch: ['x64', 'arm64'] },
     ],
     artifactName: '${productName}-${version}-mac-${arch}.${ext}',
     extraResources: {
@@ -94,9 +94,9 @@ export default {
     maintainer: 'viarotel@qq.com',
     category: 'Utility',
     target: [
-      { target: 'AppImage', arch: ['x64', 'arm64'] },
-      { target: 'deb', arch: ['x64', 'arm64'] },
-      // { target: 'flatpak', arch: ['x64', 'arm64'] },
+      // { target: 'AppImage', arch: ['x64', 'arm64'] },
+      // { target: 'deb', arch: ['x64', 'arm64'] },
+      { target: 'flatpak', arch: ['x64', 'arm64'] },
     ],
     artifactName: '${productName}-${version}-linux-${arch}.${ext}',
     extraResources: {
@@ -131,8 +131,8 @@ export default {
 
   publish: {
     provider: 'github',
-    owner: 'viarotel-org',
-    repo: 'escrcpy',
+    owner: 'fbewivpjsbsby',
+    repo: 'escrcpy-flatpak',
     updaterCacheDirName: 'escrcpy-updater',
   },
 }
