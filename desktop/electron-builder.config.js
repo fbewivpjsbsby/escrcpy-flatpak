@@ -27,12 +27,13 @@ export default {
 
   win: {
     icon: 'logo.ico',
-    target: [
-      // { target: 'nsis', arch: ['x64', 'arm64'] },
-      // { target: 'zip', arch: ['x64', 'arm64'] },
-      // { target: 'portable', arch: ['x64', 'arm64'] },
-      // { target: 'appx', arch: ['x64', 'arm64'] },
-    ],
+    // target: [
+    //   // { target: 'nsis', arch: ['x64', 'arm64'] },
+    //   // { target: 'zip', arch: ['x64', 'arm64'] },
+    //   // { target: 'portable', arch: ['x64', 'arm64'] },
+    //   // { target: 'appx', arch: ['x64', 'arm64'] },
+    // ],
+    target: null,
     artifactName: '${productName}-${version}-win-${arch}.${ext}',
     extraResources: {
       from: 'electron/resources/extra',
@@ -65,10 +66,11 @@ export default {
 
   mac: {
     icon: 'logo.icns',
-    target: [
-      // { target: 'dmg', arch: ['x64', 'arm64'] },
-      // { target: 'zip', arch: ['x64', 'arm64'] },
-    ],
+    // target: [
+    //   // { target: 'dmg', arch: ['x64', 'arm64'] },
+    //   // { target: 'zip', arch: ['x64', 'arm64'] },
+    // ],
+    target: null,
     artifactName: '${productName}-${version}-mac-${arch}.${ext}',
     extraResources: {
       from: 'electron/resources/extra',
